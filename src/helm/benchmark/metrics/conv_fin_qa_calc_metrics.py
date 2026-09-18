@@ -30,7 +30,7 @@ def float_equiv(str1: str, str2: str, eps: float = 1e-6) -> float:
 
     Note: This is a "mostly-correct" equality function and does not handle some cases correctly:
 
-    - If either value cannot be parsed as a float, then it will always return 0.0,
+    - If either string cannot be parsed as a float, then it will return 0.0,
       regardless of whether the strings match.
     - If either of both values have different units (e.g. currency symbols,
       trailing "M" or "B", trailing %), the values will not be converted to the same
